@@ -48,7 +48,7 @@ const apiSettings = {
         body: JSON.stringify(bodyData)
       })
     ).json();
-    // Then get the sessionId with the requestToken
+    // Then get the sessionId with the requestToken....
     if (data.success) {
       const sessionId = await (
         await fetch(SESSION_ID_URL, {
