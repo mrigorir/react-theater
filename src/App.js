@@ -1,23 +1,13 @@
-import React, { useState } from 'react';
-import Lamp from './styles/Lamp';
-import Button from './styles/Button';
+import React from 'react';
+import GlobalStyle from './styles/GlobalStyles.styles';
+import Header from './components/Header';
 
 function App() {
-  const [light, setLight] = useState(false);
-  const handleLight = () => {
-    setLight(!light);
-  }
-
   return (
     <div className="App">
-      <br />
-      <br />
-      <Lamp light={light} />
-      <br />
-      <br />
-      <Button onClick={handleLight} light={light}>
-        {light ? 'On' : 'Off'}
-      </Button>
+      <Header />
+      Start!
+      <GlobalStyle />
     </div>
   );
 }
