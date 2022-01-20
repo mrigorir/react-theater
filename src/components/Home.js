@@ -1,6 +1,6 @@
 import React from 'react';
 import { POSTER_SIZE, BACKDROP_SIZE, IMAGE_BASE_URL } from '../services/config';
-import NoImage from '../assets/images/no_image.jpg';
+// import NoImage from '../assets/images/no_image.jpg';
 import useHomeFetch  from './hooks/useHomeFetch';
 import HeroImage from './HeroImage';
 
