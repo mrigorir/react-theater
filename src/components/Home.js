@@ -1,12 +1,13 @@
 import React from 'react';
 import { POSTER_SIZE, BACKDROP_SIZE, IMAGE_BASE_URL } from '../services/config';
-import NoImage from '../assets/images/no_image.jpg';
 import useHomeFetch  from './hooks/useHomeFetch';
 import HeroImage from './HeroImage';
 import Grid from './Grid';
+import SearchBar from './SearchBar';
+// import Spinner from './Spinner';
 
 const Home = () => {
-  const { state, loading, error } = useHomeFetch();
+  const { state, loading, error, searchRef, handleSearchValue } = useHomeFetch();
   return (
     <>
       { state.results[0] === undefined ? null : 
@@ -17,7 +18,8 @@ const Home = () => {
               text={state.results[0][0].overview} 
               title={state.results[0][0].original_title}
             />
-            <Grid header='Popular movies' results={state} />
+            <SearchBar searchRef={searchRef} handleSearchValue={handleSearchValue} />
+            <Grid header='Popular movies' results={state} posterSize={POSTER_SIZE} imageUrl={IMAGE_BASE_URL} />
           </>
         )
       }    
