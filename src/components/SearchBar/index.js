@@ -1,13 +1,13 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React from 'react';
 import searchIcon from '../../assets/images/search-icon.svg';
-import { Wrapper, Content, Image } from './SearchBar.styles';
+import { Wrapper, Content, Image, Input } from './SearchBar.styles';
 
 const SearchBar = ({ searchRef, handleSearchValue }) => {
   return (
     <Wrapper>
       <Content>
         <Image src={searchIcon} alt="search-icon" />
-        <input 
+        <Input 
           type="text" 
           placeholder="Search Movie"
           ref={searchRef}
