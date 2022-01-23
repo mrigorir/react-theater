@@ -36,7 +36,8 @@ const useHomeFetch = () => {
       }));
 
     } catch (error) {
-      setError('Invalid movie, please press f5 to reaload the page');
+      setError(true);
+      console.log(error);
     }
     setLoading(false);
   };

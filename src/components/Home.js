@@ -8,6 +8,7 @@ import SearchBar from './SearchBar';
 
 const Home = () => {
   const { state, loading, error, searchRef, handleSearchValue } = useHomeFetch();
+  console.log('HERE! '+error);
   return (
     <>
       { state.results[0] === undefined ? null : 
