@@ -7,6 +7,14 @@ const Container = styled.div`
   height: 100%;
   width: 100%;
   background: var(--white);
+
+  a {
+    font-weight: bold;
+    letter-spacing: .20rem;
+    color: var(--white);
+    font-size: 35px;
+    text-decoration: none;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -15,6 +23,10 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: 250px;
+  border: solid 2px var(--medGrey);
+  padding: 40px;
+  border-radius: 20px;
+  background-color: var(--lightGrey);
 `;
 
 const Span = styled.span`
@@ -27,11 +39,16 @@ const Span = styled.span`
 `;
 
 const Title = styled.h1`
-
+  color: #b40c0c;
+  font-size: 50px;
 `;
 
 const Button = styled.button`
-
+  border: none;
+  border-radius: 20px;
+  background-color: var(--medGrey);
+  padding: 10px 60px;
+  box-shadow: 5px 5px 0px red;
 `;
 
 export { Container, Wrapper, Span, Title, Button };

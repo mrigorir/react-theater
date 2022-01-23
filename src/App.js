@@ -12,7 +12,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/error" element={<Error404 />} />
+          <Route path="*" element={<Error404 />} />
         </Routes>
       </Router>
       <GlobalStyle />

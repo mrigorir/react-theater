@@ -48,6 +48,7 @@ const useHomeFetch = () => {
 
   useEffect(() => {
     fetchMovies(1, searchTerm);
+    setError(true);
   }, [searchTerm]);
 
   return { state, loading, error, searchRef, handleSearchValue };
