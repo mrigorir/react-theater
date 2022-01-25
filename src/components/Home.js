@@ -4,14 +4,17 @@ import useHomeFetch  from './hooks/useHomeFetch';
 import HeroImage from './HeroImage';
 import Grid from './Grid';
 import SearchBar from './SearchBar';
-// import Spinner from './Spinner';
+import Button from './Button';
+import Spinner from './Spinner';
 
 const Home = () => {
-  const { state, loading, error, searchRef, handleSearchValue } = useHomeFetch();
-  console.log('HERE! '+error);
+  const { state, loading, error, searchRef, handleSearchValue, searchTerm, setIsLoadingMore } = useHomeFetch();
+
+  if (error) return <div> Plop...! </div>
+
   return (
     <>
-      { state.results[0] === undefined ? null : 
+      {state.results[0] === undefined ? null : 
         (
           <>
             <HeroImage 
@@ -20,7 +23,11 @@ const Home = () => {
               title={state.results[0][0].original_title}
             />
             <SearchBar searchRef={searchRef} handleSearchValue={handleSearchValue} />
-            <Grid header='Popular movies' results={state} posterSize={POSTER_SIZE} imageUrl={IMAGE_BASE_URL} />
+            <Grid header={searchTerm ? 'Seacrh Results' : 'Popular movies'} results={state} posterSize={POSTER_SIZE} imageUrl={IMAGE_BASE_URL} />
+            { loading && <Spinner /> }
+            { state.page < state.total_pages && !loading && (
+              <Button text='Load more' callback={() => setIsLoadingMore(true) } />
+            )}
           </>
         )
       }    
