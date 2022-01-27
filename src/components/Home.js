@@ -21,12 +21,12 @@ const Home = () => {
         (
           <>
             <HeroImage 
-              image={`${IMAGE_BASE_URL}${BACKDROP_SIZE}${state.results[0][0].backdrop_path}`} 
-              text={state.results[0][0].overview} 
-              title={state.results[0][0].original_title}
+              image={`${IMAGE_BASE_URL}${BACKDROP_SIZE}${state.results[0].backdrop_path}`} 
+              text={state.results[0].overview} 
+              title={state.results[0].original_title}
             />
             <SearchBar searchRef={searchRef} handleSearchValue={handleSearchValue} />
-            <Grid header={searchTerm ? 'Seacrh Results' : 'Popular movies'} results={state} posterSize={POSTER_SIZE} imageUrl={IMAGE_BASE_URL} />
+            <Grid header={searchTerm ? 'Seacrh Results' : 'Popular movies'} state={state} posterSize={POSTER_SIZE} imageUrl={IMAGE_BASE_URL} />
             { loading && <Spinner /> }
             { state.page < state.total_pages && !loading && (
               <Button text='Load more' callback={() => setIsLoadingMore(true) } />

@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from './Thumb.styles';
 
-const Thumb = ({ image, movieId, clickcable }) => (
+const Thumb = ({ image }) => (
   <div>
     <Image src={image} alt="movie-thumb" />
   </div>
