@@ -36,7 +36,7 @@ const useHomeFetch = () => {
       setState(prev => ({
         ...movies,
         results:
-        page > 1 ? [...prev.results, ...movies.results] : [...movies.results] // lol
+        page > 1 ? [...prev.results, ...movies.results] : [...movies.results] // lolazo
       }));
 
     } catch (error) {
