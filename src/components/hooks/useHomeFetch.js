@@ -30,9 +30,6 @@ const useHomeFetch = () => {
       const { fetchMovies } = apiSettings;
       const movies = await fetchMovies(searchTerm, page);
       
-      console.log('old state');
-      console.log(state);
-      
       setState(prev => ({
         ...movies,
         results:
