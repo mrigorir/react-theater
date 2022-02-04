@@ -11,10 +11,12 @@ const Grid = ({ header, state, posterSize, imageUrl }) => (
      { state.results.map( (movie) => { 
        return (
         <Thumb 
-          key={movie.id}
-          image={movie.poster_path 
+          key={ movie.id }
+          movieId={ movie.id }
+          clickable={ true }
+          image={ movie.poster_path 
           ? `${imageUrl}${posterSize}${movie.poster_path}` 
-          : NoImage} 
+          : NoImage } 
         />
        )
       })} 	

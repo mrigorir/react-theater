@@ -8,9 +8,9 @@ import Button from './Button';
 import Spinner from './Spinner';
 
 const Home = () => {
-  const { state, loading, error, searchRef, handleSearchValue, searchTerm, setIsLoadingMore } = useHomeFetch();
+  const { state, loading, trouble, searchRef, handleSearchValue, searchTerm, setIsLoadingMore } = useHomeFetch();
 
-  if (error) return <div> Plop...! </div>
+  if (trouble) return <div> Plop...! </div>
 
   return (
     <>
