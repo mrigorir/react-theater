@@ -18,7 +18,7 @@ const movieFetch = (movieId) => {
         const movie = await fetchMovie(movieId)
         const credits = await fetchCredits(movieId);
         // get directors only
-        const directors = credits.crew.filter(member => member.job === 'Director');
+        const directors = credits.crew.filter(member => member.job === 'Director'); // lol
 
         setState({
           ...movie,
