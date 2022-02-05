@@ -35,5 +35,5 @@ const movieFetch = (movieId) => {
     }
   }, [movieId]);
 
-  return { state, loading, error };
+  return { state, loading };
 }
