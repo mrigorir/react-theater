@@ -2,16 +2,21 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Image from './Thumb.styles';
 
-const Thumb = ({ image, movieId, clickable }) => (
+const Thumb = ({ image, movieId, clickable, title }) => {
+  const mapObj = { ":" : "", " " : "-" };
+  title = title.replace(/[:\s+]/g, ((matched) => mapObj[matched])).toLowerCase();
+
+  return (
   <div>
     { clickable ? (
-      <Link to={ `${movieId}` }>
+      <Link to={ `${title}/${movieId}` }>
         <Image src={image} alt="movie-thumb" />
       </Link>
     ) : (
       <Image src={image} alt="movie-thumb" />
     )}
   </div>
-);
+  )
+};
 
 export default Thumb;

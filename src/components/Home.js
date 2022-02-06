@@ -11,7 +11,6 @@ const Home = () => {
   const { state, loading, trouble, searchRef, handleSearchValue, searchTerm, setIsLoadingMore } = useHomeFetch();
 
   if (trouble) return <div> Plop...! </div>
-
   return (
     <>
       {state.results[0] !== undefined ? 

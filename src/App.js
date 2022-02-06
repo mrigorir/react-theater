@@ -11,7 +11,7 @@ const App = () => (
     <Header />
     <Routes>
       <Route path='/' element={ <Home /> } />
-      <Route path='/:movieId' element={ <Movie /> } />
+      <Route path='/:title/:movieId' element={ <Movie /> } />
       <Route path='/*' element={ <Error404 /> } />
     </Routes>
     <GlobalStyle />

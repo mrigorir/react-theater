@@ -13,6 +13,7 @@ const Grid = ({ header, state, posterSize, imageUrl }) => (
         <Thumb 
           key={ movie.id }
           movieId={ movie.id }
+          title={movie.original_title}
           clickable={ true }
           image={ movie.poster_path 
           ? `${imageUrl}${posterSize}${movie.poster_path}` 

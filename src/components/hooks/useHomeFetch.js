@@ -21,7 +21,6 @@ const useHomeFetch = () => {
     setSearchTerm(ref.current.value);
   }
 
-  
   const fetchMovies = async (page, searchTerm = "") => {
     try {
       setTrouble(false);
