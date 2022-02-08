@@ -15,7 +15,7 @@ const Movie = () => {
     <>
       { error && <Error404 /> }
       { loading && <Spinner /> }
-      <BreadCrumb movieTitle={state.original_title} /> //lol
+      <BreadCrumb movieTitle={state.original_title} /> //lolazo
     </>
   )
 };
