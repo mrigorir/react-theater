@@ -1,5 +1,4 @@
-import { useState, useCallback } from 'react';
-import { useEffect } from 'react/cjs/react.development';
+import { useState, useCallback, useEffect } from 'react';
 import apiSettings from '../../services/API';
 
 const useMovieFetch = (movieId) => {
@@ -18,7 +17,7 @@ const useMovieFetch = (movieId) => {
       const credits = await fetchCredits(movieId);
       // get directors only
       const directors = credits.crew.filter(member => member.job === 'Director'); // lol
-
+      
       setState({
         ...movie,
         actors: credits.cast,

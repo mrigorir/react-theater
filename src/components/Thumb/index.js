@@ -3,9 +3,8 @@ import { Link } from 'react-router-dom';
 import Image from './Thumb.styles';
 
 const Thumb = ({ image, movieId, clickable, title }) => {
-  const mapObj = { ":" : "", " " : "-" };
-  title = title.replace(/[:\s+]/g, ((matched) => mapObj[matched])).toLowerCase();
-
+  /*onst mapObj = { ":" : "", " " : "-" };
+  const title = title.replace(/[:\s+]/g, ((matched) => mapObj[matched])).toLowerCase();*/
   return (
   <div>
     { clickable ? (
