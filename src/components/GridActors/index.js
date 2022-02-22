@@ -20,7 +20,7 @@ const GridActors = ({ header, movie }) => {
                   key={credit_id} 
                   name={name} 
                   character={character} 
-                  imageUrl={profile_path ? `${IMAGE_BASE_URL}${POSTER_SIZE}${profile_path}` : NoImage } 
+                  imageUrl={profile_path ? `${IMAGE_BASE_URL}${POSTER_SIZE}${profile_path}` : NoImage } // lol
                 />  
               );
             })
