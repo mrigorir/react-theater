@@ -17,4 +17,4 @@ const SearchBar = ({ searchRef, handleSearchValue }) => {
   )
 };
 
-export default SearchBar; //lol
+export default SearchBar; //lolazo
