@@ -29,7 +29,7 @@ const Home = () => {
        <Grid header={searchTerm ? 'Seacrh Results' : 'Popular movies'} state={state} posterSize={POSTER_SIZE} imageUrl={IMAGE_BASE_URL} />
        { loading && <Spinner /> }
        { state.page < state.total_pages && !loading && (
-         <Button text='Load more' callback={() => setIsLoadingMore(true) } /> //lol
+         <Button text='Load more' callback={() => setIsLoadingMore(true) } /> //lolazo
        )}  
     </>
   )
