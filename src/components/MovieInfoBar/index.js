@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { calcTime, convertMoney } from '../../logic/helpers';
 import { Wrapper, Content } from '../MovieInfoBar/MovieInfoBar.styles';
 
@@ -12,10 +13,16 @@ const MovieInfoBar = ({ time, budget, revenue }) => (
         <p> Budget: {convertMoney(budget)} </p>
       </div>
       <div className="column">
-        <p> Revenue {convertMoney(revenue)} </p>
+        <p> Revenue: {convertMoney(revenue)} </p>
       </div>
     </Content>
   </Wrapper>
-)
+);
+
+MovieInfoBar.propTypes = {
+  time: PropTypes.number,
+  budget: PropTypes.number,
+  revenue: PropTypes.number,
+}
 
 export default MovieInfoBar;

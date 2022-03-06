@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Wrapper, Content } from '../Grid/Grid.styles';
 import { IMAGE_BASE_URL, POSTER_SIZE } from '../../services/config';
 import Actor from '../Actor';
@@ -29,6 +30,11 @@ const GridActors = ({ header, movie }) => {
       </Content>
     </Wrapper>
   )
+}
+
+GridActors.propTypes = {
+  header: PropTypes.string,
+  movie: PropTypes.oneOfType([PropTypes.object]),
 }
 
 export default GridActors;

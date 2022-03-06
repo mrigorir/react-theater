@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Link } from 'react-router-dom';
 import RMDBLogo from '../../assets/images/react-movie-logo.svg';
 import TMDBLogo from '../../assets/images/tmdb_logo.svg';

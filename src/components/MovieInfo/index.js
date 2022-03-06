@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { IMAGE_BASE_URL, POSTER_SIZE } from '../../services/config';
 import NoImage from '../../assets/images/no_image.jpg';
 import { Wrapper, Content, Text } from './MovieInfo.styles';
@@ -40,5 +41,9 @@ const MovieInfo = ({ movie }) => {
   </Wrapper>
   )
 };
+
+MovieInfo.propTypes = {
+  movie: PropTypes.oneOfType([PropTypes.object]),
+}
 
 export default MovieInfo;
