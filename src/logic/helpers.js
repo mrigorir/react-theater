@@ -14,4 +14,9 @@ const convertMoney = money => {
   return formatter.format(money);
 };
 
-export { calcTime, convertMoney };
+const isPersistedState = (stateName) => {
+  const sessionState = sessionStorage.getItem(stateName);
+  return sessionState && JSON.parse(sessionState);
+}
+
+export { calcTime, convertMoney, isPersistedState };

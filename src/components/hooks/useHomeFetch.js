@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { isPersistedState } from '../../logic/helpers';
 import apiSettings from '../../services/API';
 
 const initialState = {
@@ -42,6 +43,13 @@ const useHomeFetch = () => {
   };
 
   useEffect(() => {
+    if (!searchTerm) {
+      const sessionState = isPersistedState('homeState');
+      if (sessionState) {
+        setState(sessionState);
+        return;
+      }
+    }
     fetchMovies(1, searchTerm);
   }, [searchTerm]);
 
