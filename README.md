@@ -1,6 +1,6 @@
 # React theater
 
-> This project handles the free movie updates API from ![movie db](https://www.themoviedb.org/) website. You can search any kind of movie to see it's background (Title, plot, rating, grid of actors, etc) on Movie view, you can login using local data on local storage.
+> This project handles the free movie updates API from [movie db](https://www.themoviedb.org/) website. You can search any kind of movie to see it's background (Title, plot, rating, grid of actors, etc) on Movie view, you can login using local data on local storage.
 
 ## This project was built with:
 
