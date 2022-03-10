@@ -4,7 +4,6 @@ import useMovieFetch from './hooks/useMovieFetch';
 import BreadCrumb from './BreadCrumb';
 import MovieInfo from './MovieInfo';
 import MovieInfoBar from './MovieInfoBar';
-import Actor from './Actor';
 import GridActors from './GridActors';
 import Spinner from './Spinner';
 import Error404 from './Error/Error404';

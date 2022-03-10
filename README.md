@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# React theater
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> This project handles the free movie updates API from ![movie db](https://www.themoviedb.org/) website. You can search any kind of movie to see it's background (Title, plot, rating, grid of actors, etc) on Movie view, you can login using local data on local storage.
 
-## Available Scripts
+## This project was built with:
 
-In the project directory, you can run:
+ - React.
 
-### `npm start`
+ - React router dom.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ - Browser's Local Storage.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ - Styled components.
 
-### `npm test`
+ - Movie db API.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Image Preview
+![Screenshot Main Page](./src/assets/images/capture.PNG);
 
-### `npm run build`
+## :star: [Live Demo](https://distracted-shockley-e1f6ca.netlify.app/) :star:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To get a local copy up and running follow these simple example steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- On the project, GitHub page, navigate to the [main page of the repository](https://github.com/mrigorir/react-theater)
 
-### `npm run eject`
+- Click on a button named `code`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Copy the project URL as displayed on HTTPS tab
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- If you're running Windows Operating System, open your command prompt. On Linux, Open your terminal
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Change the current working directory to the location where you want the cloned directory to be made. Leave as it is if the current location is where you want the project to be.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Type `git clone`, and then paste the URL you copied in Step 3.<br>
 
-## Learn More
+  `$ git clone git@github.com:mrigorir/react-theater.git` <em>Press Enter key</em><br>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Your local copy will be created.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Please note that you must have Git installed on your PC, this can be done [here](https://gist.github.com/derhuerst/1b15ff4652a867391f03)
 
-### Code Splitting
+- After you get the project aiming to the desired directory, you need now to install dependencies by running npm install.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+### Github Actions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To make sure the linters' checks using Github Actions work properly, you should follow the next steps:
 
-### Making a Progressive Web App
+1. On your recently forked repo, enable the GitHub Actions in the Actions tab.
+   
+2. Create the `feature/branch` and push.
+   
+3. Start working on your milestone as usual.
+   
+4. Open a PR from the `feature/branch` when your work is done.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Usage 
 
-### Advanced Configuration
+- Make sure you have npm and node installed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- I recommend the use of VS code as a code editor, but you can use any code editor.
 
-### Deployment
+- Run in your terminal `npm start` OR `yarn start` to see the run the app in your default browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- You should see the todo form ready to be used.
 
-### `npm run build` fails to minify
+- Add a name for the task owner (description is optional).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- hit create button to create your todo.
+
+- You can either check it when DONE or remove it by hitting the trash icon.
+## Authors
+
+👤 **Marco Parra**
+
+- GitHub: [@mrigorir](https://github.com/mrigorir)
+- Twitter: [@marcoparra311](https://twitter.com/marcoparra311)
+- LinkedIn: [@marco-alonso-parra](https://www.linkedin.com/in/marco-alonso-parra/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/mrigorir/react-theater/issues)
+
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+
+## Acknowledgments
+
+- Creation inspired on [this React course](https://www.youtube.com/watch?v=nTeuhbP7wdE)
+
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
