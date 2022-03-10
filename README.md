@@ -15,7 +15,7 @@
  - Movie db API.
 
 ## Image Preview
-![Screenshot Main Page](./src/assets/images/capture.PNG);
+![Screenshot Main Page](./src/assets/images/capture.PNG)
 
 ## :star: [Live Demo](https://distracted-shockley-e1f6ca.netlify.app/) :star:
 
