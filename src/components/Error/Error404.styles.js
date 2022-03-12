@@ -10,7 +10,7 @@ const Container = styled.div`
 
   a {
     font-weight: bold;
-    letter-spacing: .20rem;
+    letter-spacing: .20rem; //lol
     color: var(--white);
     font-size: 35px;
     text-decoration: none;
