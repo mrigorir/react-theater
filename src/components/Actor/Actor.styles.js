@@ -21,4 +21,4 @@ const Image = styled.img`
   border-radius: 15px;
 `;
 
-export { Wrapper, Image };
+export { Wrapper, Image };//lolazo
