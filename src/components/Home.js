@@ -9,7 +9,6 @@ import Spinner from './Spinner';
 
 const Home = () => {
   const { state, loading, trouble, searchRef, handleSearchValue, searchTerm, setIsLoadingMore } = useHomeFetch();
-  console.log(state);
   if (trouble) return <div> Plop...! </div>
   return (
     <>

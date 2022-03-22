@@ -6,7 +6,6 @@ import { Wrapper, Content, Text } from './MovieInfo.styles';
 import Thumb from '../Thumb';
 
 const MovieInfo = ({ movie }) => {
-  console.log(movie);
   const { directors, poster_path, original_title, title, overview, vote_average } = movie;
   return (
     <Wrapper backdrop={movie.backdrop_path}>
